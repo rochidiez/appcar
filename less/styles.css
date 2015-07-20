@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    //width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper header {
+    height: 90px;
+    position: relative;
+}
+
+.wrapper header img {
+    position: absolute;
+    left: 6%;
+    top: 30px;
+}
+
+.wrapper header .phone {
+    position: absolute;
+    right: 6%;
+    top: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: #455ea2;
+}
+
+.wrapper section.banner {
+    height: 430px;
+    background-image: url(../img/banner.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+    color: white;
+}
+
+.wrapper section.banner p.title {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    font-size: 42px;
+    text-shadow: 1px 1px 5px #969696;
+    width: 46%;
+    text-align: center;
+}
+
+.wrapper section.banner .content {
+    background-image: url(../img/banner-content.png);
+    background-size: 60% 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 430px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 130px 0 0 70px;
+    text-align: center;
+}
+
+.wrapper section.banner .content .text {
+    width: 40%;
+    float: left;
+}
+
+.wrapper section.banner .content .text h3 {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.wrapper section.banner .content .text button {
+    -webkit-apperance: none;
+    padding: 20px 35px;
+    border-radius: 10px;
+    background-color: #ff6000;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.wrapper section.banner .content .text p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.wrapper section.statement {
+    padding: 70px 0;
+}
+
+.wrapper section.statement .content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.wrapper section.statement .content .picture {
+    float: left;
+    margin-right: 5%;
+    width: 14%;
+}
+
+.wrapper section.statement .content p {
+    color: #006bff;
+    padding-top: 5%;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.wrapper section.statement .content p.name {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.wrapper section.statement .content .clear {
+    clear: both;
+}
+
+.wrapper section.info {
+    background-color: #F6F6F6;
+    padding: .1px;
+    padding: 50px 0;
+}
+
+.wrapper section.info h2 {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #006bff;
+}
+
+.wrapper section.info p {
+    font-size: 16px;
+    color: #444e5d;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper section.info .slider p {
+    width: 100%;
+}
+
+.wrapper section.info div.testPeriod {
+    margin: 40px auto 0;
+    width: 60%;
+}
+.wrapper section.info div.testPeriod img {width: 100%;}
+
+.wrapper section.info div.testPeriod h3 {
+    font-size: 17px;
+    color: #006bff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.wrapper section.info div.testPeriod .slider {
+    margin-top: 10px;
+}
+
+.wrapper section.info div.testPeriod .slider .swiper-container {
+    width: 735px;
+    height: 380px;
+}
+
+.wrapper section.info div.testPeriod .slider .swiper-container .swiper-slide .content h3 {
+    font-size: 18px;
+    color: white;
+    text-transform: none;
+}
+
+.wrapper section.info div.testPeriod .slider .swiper-container .swiper-slide .content p {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+}
+
+.wrapper section.reasons {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.wrapper section.reasons ul {
+    padding: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.wrapper section.reasons h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 400;
+    color: #006bff;
+}
+
+.wrapper section.reasons .reason {
+    padding: 20px 10px;
+    background-color: #f4f4f5;
+    border-bottom: solid 5px #f48442;
+    display: inline-block;
+    width: 31%;
+    float: left;
+    height: 320px;
+    vertical-align: top;
+    margin: 5% 1% 0 1%;
+}
+.wrapper section.reasons .reason img {width: 12%;}
+.wrapper section.reasons .reason h1 {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.wrapper section.reasons .reason p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.wrapper section.reasons button {
+    -webkit-apperance: none;
+    padding: 10px 35px;
+    border-radius: 30px;
+    background-color: #006bff;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-top {
+    width: 100%;
+}
+
+footer {
+    background-color: #29303a;
+    padding: 30px 0;
+}
+
+footer .content {
+    text-align: right;
+    width: 735px;
+    margin: 0 auto;
+}
+
+#value1 {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -o-animation-delay: .2s;
+}
+
+#value2 {
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    -o-animation-delay: .4s;
+}
+
+#value3 {
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -o-animation-delay: .6s;
+}
+
+#value4 {
+    -webkit-animation-delay: .8s;
+    -moz-animation-delay: .8s;
+    -o-animation-delay: .8s;
+}
+
+#value5 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+}
+
+#value6 {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+}
+
+.wrapper section.info .article-slide .carousel-caption p {
+    color: #ffffff;
+    width: 80%;
+}
+
+.carousel-caption {
+    width: 100%;
+    padding: 2%;
+    right: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
+    background-image: -moz-linear-gradient(19% 75% 90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    bottom: 0;
+}
+.carousel-caption h1 {font-size: 26px; margin-bottom: 4px;}
+.wrapper section.info .carousel-caption p {margin-top: 4px;}
+/* Indicators list style */
+
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+/* Indicators list style */
+
+.article-slide .carousel-indicators li:nth-child(1) {
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.article-slide .carousel-indicators li:nth-child(2) {
+    border-right: 0;
+    border-left: 0;
+    -webkit-border-right: 0;
+    -webkit-border-left: 0;
+    -moz-border-right: 0;
+    -moz-border-left:0;
+}
+.article-slide .carousel-indicators li:nth-child(3) {
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.article-slide .carousel-indicators li:nth-child(3).active .puntero {border-width: 0 0 0 0;}
+.article-slide .carousel-indicators li {
+    width: 33.2%;
+    background-image: none !important;
+    border: 1px solid #006bff;
+    color: #006bff;
+    padding: 2% 0%;
+    font-size: 16px;
+    margin: 1% 0 !important;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+
+.article-slide .carousel-indicators li.active .puntero {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 20px;
+    border-color: transparent transparent transparent #006bfe;
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+.article-slide .carousel-indicators li:hover {
+    font-weight: bold;
+}
+
+.article-slide .carousel-indicators li.active {
+    opacity: 1;
+    background: #006bfe;
+    border: 0;
+    color: #ffffff;
+}
+/* Indicators images style */
+/* Indicators active image style */
+footer .content {width: 100%;} 
+
+
+
+@media (max-width: 990px) {
+    .wrapper section.banner {
+        background-size: auto 100%;
+        background-position: top right;
+    }
+    .wrapper section.banner .content .text h3 {
+        font-size: 23px;
+    }
+    .wrapper section.banner p.title {
+        font-size: 30px
+    }
+    .wrapper section.banner .content .text button {
+        font-size: 14px
+    }
+    .wrapper header .phone {
+        font-size: 20px;
+    }
+    .wrapper section.statement .content .picture {
+        width: 16%;
+        margin-top: 2%;
+    }
+    .wrapper section.reasons ul {
+        width: 94%;
+    }
+    .wrapper section.info div.testPeriod {width: 80%;}
+}
+
+@media (max-width: 740px) {
+    .wrapper section.statement .content p {
+        font-size: 18px;
+    }
+    .wrapper section.statement .content {
+        width: 80%;
+    }
+    .wrapper section.info div.testPeriod .slider .swiper-container {
+        width: 100%;
+    }
+    .wrapper section.reasons .reason {
+        width: 48%;
+    }
+}
+@media (max-width: 460px){
+    .wrapper section.reasons .reason {height: auto; width: 100%;}
+    .wrapper section.reasons h2, .wrapper section.info div.testPeriod h3, .wrapper section.info h2 {font-size: 16px;}
+    .article-slide .carousel-indicators li {height: 40px;}
+.article-slide .carousel-indicators li.active .puntero {border-width: 20px 0 20px 20px;}
+.wrapper section.reasons {padding: 40px 0;}
+.carousel-caption h1 {font-size: 18px;}
+.wrapper section.info p {font-size: 12px; width: 90%;}
+.wrapper section.banner p.title {display: none;}
+.wrapper section.banner .content {background-size: 0 0; }
+.wrapper section.banner {background-position: top left;}
+.wrapper section.statement .content {text-align: center;}
+.wrapper section.statement .content .picture {width: 40%; float: none;}
+footer .content img {width: 20%; padding-right: 2%;}
+.wrapper section.banner .content {padding: 20% 0 0 3%;}
+.wrapper header .phone {font-size: 16px; top: 30%;}
+.wrapper header img {width: 22%; top: 30%;}
+.wrapper header {height: 60px;}
+.wrapper section.reasons button {width: 90%;}
+.wrapper section.info div.testPeriod {width: 98%;}
+.wrapper section.banner .content .text {
+    width: 100%;}
+
+
+}
