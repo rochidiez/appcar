@@ -111,30 +111,46 @@ h6 {
 }
 
 .wrapper section.statement {
-    padding: 70px 0;
+    padding: 0;
+    margin: 3% auto;
 }
 
 .wrapper section.statement .content {
     width: 70%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .wrapper section.statement .content .picture {
     float: left;
-    margin-right: 5%;
+    margin-left: 5%;
     width: 14%;
+    padding: 2%;
+    margin-top: 4%;
 }
 
+.wrapper section.statement .content .text {
+    float: left;
+    padding: 4%;
+    width: 81%;
+    margin-top: 0;
+    margin-bottom: 1%;
+    text-align: left;
+}
+.wrapper section.statement .content span {font-size: 18px; color: #006bff;}
+
 .wrapper section.statement .content p {
-    color: #006bff;
-    padding-top: 5%;
+    color: #404040;
+    padding-top: 3%;
     font-size: 22px;
     font-style: italic;
+    margin-bottom: 0;
 }
 
 .wrapper section.statement .content p.name {
     padding-top: 20px;
-    text-align: right;
+    text-align: left;
+    font-size: 16px;
 }
 
 .wrapper section.statement .content .clear {
@@ -144,7 +160,7 @@ h6 {
 .wrapper section.info {
     background-color: #F6F6F6;
     padding: .1px;
-    padding: 50px 0;
+    padding: 6% 0 10% 0;
 }
 
 .wrapper section.info h2 {
@@ -171,7 +187,10 @@ h6 {
     margin: 40px auto 0;
     width: 60%;
 }
-.wrapper section.info div.testPeriod img {width: 100%;}
+
+.wrapper section.info div.testPeriod img {
+    width: 100%;
+}
 
 .wrapper section.info div.testPeriod h3 {
     font-size: 17px;
@@ -184,22 +203,8 @@ h6 {
     margin-top: 10px;
 }
 
-.wrapper section.info div.testPeriod .slider .swiper-container {
-    width: 735px;
-    height: 380px;
-}
 
-.wrapper section.info div.testPeriod .slider .swiper-container .swiper-slide .content h3 {
-    font-size: 18px;
-    color: white;
-    text-transform: none;
-}
 
-.wrapper section.info div.testPeriod .slider .swiper-container .swiper-slide .content p {
-    font-size: 14px;
-    color: white;
-    text-align: left;
-}
 
 .wrapper section.reasons {
     padding: 80px 0;
@@ -230,7 +235,11 @@ h6 {
     vertical-align: top;
     margin: 5% 1% 0 1%;
 }
-.wrapper section.reasons .reason img {width: 12%;}
+
+.wrapper section.reasons .reason img {
+    width: 12%;
+}
+
 .wrapper section.reasons .reason h1 {
     font-size: 16px;
     font-weight: 400;
@@ -318,7 +327,7 @@ footer .content {
     width: 80%;
 }
 
-.carousel-caption {
+#article-photo-carousel .carousel-caption {
     width: 100%;
     padding: 2%;
     right: 0;
@@ -327,11 +336,18 @@ footer .content {
     background-image: -moz-linear-gradient(19% 75% 90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
     bottom: 0;
 }
-.carousel-caption h1 {font-size: 26px; margin-bottom: 4px;}
-.wrapper section.info .carousel-caption p {margin-top: 4px;}
+
+.carousel-caption h1 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.wrapper section.info .carousel-caption p {
+    margin-top: 4px;
+}
 /* Indicators list style */
 
-.article-slide .carousel-indicators {
+#article-photo-carousel .carousel-indicators {
     bottom: 0;
     left: 0;
     width: 100%;
@@ -340,7 +356,7 @@ footer .content {
 }
 /* Indicators list style */
 
-.article-slide .carousel-indicators li:nth-child(1) {
+#article-photo-carousel .carousel-indicators li:nth-child(1) {
     -webkit-border-top-left-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
     -moz-border-radius-topleft: 10px;
@@ -348,15 +364,17 @@ footer .content {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.article-slide .carousel-indicators li:nth-child(2) {
+
+#article-photo-carousel .carousel-indicators li:nth-child(2) {
     border-right: 0;
     border-left: 0;
     -webkit-border-right: 0;
     -webkit-border-left: 0;
     -moz-border-right: 0;
-    -moz-border-left:0;
+    -moz-border-left: 0;
 }
-.article-slide .carousel-indicators li:nth-child(3) {
+
+#article-photo-carousel .carousel-indicators li:nth-child(3) {
     -webkit-border-top-right-radius: 10px;
     -webkit-border-bottom-right-radius: 10px;
     -moz-border-radius-topright: 10px;
@@ -364,8 +382,12 @@ footer .content {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.article-slide .carousel-indicators li:nth-child(3).active .puntero {border-width: 0 0 0 0;}
-.article-slide .carousel-indicators li {
+
+#article-photo-carousel .carousel-indicators li:nth-child(3).active .puntero {
+    border-width: 0 0 0 0;
+}
+
+#article-photo-carousel .carousel-indicators li {
     width: 33.2%;
     background-image: none !important;
     border: 1px solid #006bff;
@@ -380,7 +402,7 @@ footer .content {
     float: left;
 }
 
-.article-slide .carousel-indicators li.active .puntero {
+#article-photo-carousel .carousel-indicators li.active .puntero {
     width: 0;
     height: 0;
     border-style: solid;
@@ -391,11 +413,11 @@ footer .content {
     right: -20px;
 }
 
-.article-slide .carousel-indicators li:hover {
+#article-photo-carousel .carousel-indicators li:hover {
     font-weight: bold;
 }
 
-.article-slide .carousel-indicators li.active {
+#article-photo-carousel .carousel-indicators li.active {
     opacity: 1;
     background: #006bfe;
     border: 0;
@@ -403,9 +425,10 @@ footer .content {
 }
 /* Indicators images style */
 /* Indicators active image style */
-footer .content {width: 100%;} 
 
-
+footer .content {
+    width: 100%;
+}
 
 @media (max-width: 990px) {
     .wrapper section.banner {
@@ -426,12 +449,24 @@ footer .content {width: 100%;}
     }
     .wrapper section.statement .content .picture {
         width: 16%;
-        margin-top: 2%;
+        margin-left: 4%;
+        margin-top: 0;
     }
+    .wrapper section.statement .content .text {width: 76%;
+        padding: 1%;
+    }
+    .wrapper section.statement .content p {font-size: 18px;}
+    .wrapper section.statement .content span {font-size: 16px;}
+    .wrapper section.statement .content p.name {font-size: 14px;}
     .wrapper section.reasons ul {
         width: 94%;
     }
-    .wrapper section.info div.testPeriod {width: 80%;}
+    .wrapper section.info div.testPeriod {
+        width: 80%;
+    }
+    .wrapper section.statement .content {
+    width: 80%;}
+    .swiper-container {padding: 6% 0;}
 }
 
 @media (max-width: 740px) {
@@ -439,7 +474,7 @@ footer .content {width: 100%;}
         font-size: 18px;
     }
     .wrapper section.statement .content {
-        width: 80%;
+        width: 94%;
     }
     .wrapper section.info div.testPeriod .slider .swiper-container {
         width: 100%;
@@ -448,28 +483,80 @@ footer .content {width: 100%;}
         width: 48%;
     }
 }
-@media (max-width: 460px){
-    .wrapper section.reasons .reason {height: auto; width: 100%;}
-    .wrapper section.reasons h2, .wrapper section.info div.testPeriod h3, .wrapper section.info h2 {font-size: 16px;}
-    .article-slide .carousel-indicators li {height: 40px;}
-.article-slide .carousel-indicators li.active .puntero {border-width: 20px 0 20px 20px;}
-.wrapper section.reasons {padding: 40px 0;}
-.carousel-caption h1 {font-size: 18px;}
-.wrapper section.info p {font-size: 12px; width: 90%;}
-.wrapper section.banner p.title {display: none;}
-.wrapper section.banner .content {background-size: 0 0; }
-.wrapper section.banner {background-position: top left;}
-.wrapper section.statement .content {text-align: center;}
-.wrapper section.statement .content .picture {width: 40%; float: none;}
-footer .content img {width: 20%; padding-right: 2%;}
-.wrapper section.banner .content {padding: 20% 0 0 3%;}
-.wrapper header .phone {font-size: 16px; top: 30%;}
-.wrapper header img {width: 22%; top: 30%;}
-.wrapper header {height: 60px;}
-.wrapper section.reasons button {width: 90%;}
-.wrapper section.info div.testPeriod {width: 98%;}
-.wrapper section.banner .content .text {
-    width: 100%;}
 
-
+@media (max-width: 460px) {
+    .wrapper section.reasons .reason {
+        height: auto;
+        width: 100%;
+    }
+    .wrapper section.reasons h2,
+    .wrapper section.info div.testPeriod h3,
+    .wrapper section.info h2 {
+        font-size: 16px;
+    }
+    .article-slide .carousel-indicators li {
+        height: 40px;
+    }
+    .article-slide .carousel-indicators li.active .puntero {
+        border-width: 20px 0 20px 20px;
+    }
+    .wrapper section.reasons {
+        padding: 40px 0;
+    }
+    .carousel-caption h1 {
+        font-size: 18px;
+    }
+    .wrapper section.info p {
+        font-size: 12px;
+        width: 90%;
+    }
+    .wrapper section.banner p.title {
+        display: none;
+    }
+    .wrapper section.banner .content {
+        background-size: 0 0;
+    }
+    .wrapper section.banner {
+        background-position: top left;
+    }
+    .wrapper section.statement .content {
+        text-align: center;
+    }
+    .wrapper section.statement .content .picture {
+        width: 40%;
+        float: none;
+    }
+    .wrapper section.statement .content p.name {padding-top: 1.5%;
+        text-align: center;}
+    .wrapper section.statement .content .text {width: 80%;
+        float: none;
+        text-align: center;
+        margin: 0 auto;}
+    footer .content img {
+        width: 20%;
+        padding-right: 2%;
+    }
+    .wrapper section.banner .content {
+        padding: 20% 0 0 3%;
+    }
+    .wrapper header .phone {
+        font-size: 16px;
+        top: 30%;
+    }
+    .wrapper header img {
+        width: 22%;
+        top: 30%;
+    }
+    .wrapper header {
+        height: 60px;
+    }
+    .wrapper section.reasons button {
+        width: 90%;
+    }
+    .wrapper section.info div.testPeriod {
+        width: 98%;
+    }
+    .wrapper section.banner .content .text {
+        width: 100%;
+    }
 }
