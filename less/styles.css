@@ -65,55 +65,21 @@ h6 {
     text-shadow: 1px 1px 5px #969696;
     width: 46%;
     text-align: center;
+    line-height: 1;
 }
 /* Animation in text */
 
-.wrapper section.banner .title p {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
+#wss {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s linear 0s;
+    transition: opacity 0.5s linear 0s;
+    margin-left: 2%;
 }
-
-.word {
-  position: absolute;
-  width: 220px;
-  opacity: 0;
-  font-weight: 400;
+.first-line {margin-left: 22%;}
+.wrapper section.banner .title p.left,
+.wrapper section.banner .title span {
+    float: left;
 }
-
-
-.letter {
-  display: inline-block;
-  position: relative;
-  float: left;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
-}
-
-.letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.letter.behind {
-  transform: rotateX(-90deg);
-}
-
-.letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.wisteria {
-  color: #ffffff;
-}
-
-.belize {
-  color: #ffffff;
-}
-
-
-
 
 .wrapper section.banner .content {
     background-image: url(../img/banner-content.png);
@@ -185,7 +151,11 @@ h6 {
     margin-bottom: 1%;
     text-align: left;
 }
-.wrapper section.statement .content span {font-size: 18px; color: #006bff;}
+
+.wrapper section.statement .content span {
+    font-size: 18px;
+    color: #006bff;
+}
 
 .wrapper section.statement .content p {
     color: #404040;
@@ -250,9 +220,6 @@ h6 {
 .wrapper section.info div.testPeriod .slider {
     margin-top: 10px;
 }
-
-
-
 
 .wrapper section.reasons {
     padding: 80px 0;
@@ -471,11 +438,6 @@ footer .content {
     border: 0;
     color: #ffffff;
 }
-
-
-
-
-
 /* Indicators images style */
 /* Indicators active image style */
 
@@ -505,12 +467,19 @@ footer .content {
         margin-left: 4%;
         margin-top: 0;
     }
-    .wrapper section.statement .content .text {width: 76%;
+    .wrapper section.statement .content .text {
+        width: 76%;
         padding: 1%;
     }
-    .wrapper section.statement .content p {font-size: 18px;}
-    .wrapper section.statement .content span {font-size: 16px;}
-    .wrapper section.statement .content p.name {font-size: 14px;}
+    .wrapper section.statement .content p {
+        font-size: 18px;
+    }
+    .wrapper section.statement .content span {
+        font-size: 16px;
+    }
+    .wrapper section.statement .content p.name {
+        font-size: 14px;
+    }
     .wrapper section.reasons ul {
         width: 94%;
     }
@@ -518,8 +487,11 @@ footer .content {
         width: 80%;
     }
     .wrapper section.statement .content {
-    width: 80%;}
-    .swiper-container {padding: 6% 0;}
+        width: 80%;
+    }
+    .swiper-container {
+        padding: 6% 0;
+    }
 }
 
 @media (max-width: 740px) {
@@ -579,12 +551,16 @@ footer .content {
         width: 40%;
         float: none;
     }
-    .wrapper section.statement .content p.name {padding-top: 1.5%;
-        text-align: center;}
-    .wrapper section.statement .content .text {width: 80%;
+    .wrapper section.statement .content p.name {
+        padding-top: 1.5%;
+        text-align: center;
+    }
+    .wrapper section.statement .content .text {
+        width: 80%;
         float: none;
         text-align: center;
-        margin: 0 auto;}
+        margin: 0 auto;
+    }
     footer .content img {
         width: 20%;
         padding-right: 2%;
